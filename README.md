@@ -8,10 +8,10 @@ This project was created for young people who are learning driving cars. By usin
 
 ## See the project 
 For see the project results, you can go to the following link : 
-<a href="https://javidsadigli.alwaysdata.net/hwp/step5/" target="_blank">https://javidsadigli.alwaysdata.net/hwp/step5/</a>
+<a href="https://javidsadigli.alwaysdata.net/hwp/step5/">https://javidsadigli.alwaysdata.net/hwp/step5/</a>
 
 ## Features 
-* Responsive website. 
+* Responsive website.
 * Saves the data in the local storage. 
 * Calculates the total kilometers. 
 
