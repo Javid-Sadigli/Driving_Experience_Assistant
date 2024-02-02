@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javid Sadigli">
+    <link rel="shortcut icon" href="https://static.thenounproject.com/png/386481-200.png">
+    <title>Home</title>
+    <style>
+        /* General */
+        *{
+            font-family:'Franklin Gothic Medium';
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin: 0px;
+        }
+        ul{
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
+            padding: 0px;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: gray;
+        }
+        .page_header{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 70px;
+            color: white;
+            background-color: darkblue;
+            margin: 0px;
+            
+        }
+        header{
+            margin: 0px;
+
+        }
+        html{
+            padding: 0px;
+            margin: 0px;
+        }
+        .nav_link{
+            transition: all 0.1s ease;
+            color: white;
+        }
+        .nav_link:hover{
+            font-size: 18px;
+        }
+        footer{
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkblue;
+            color: white;
+        }
+        main{
+            position: relative;
+            min-height: 730px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .bg_image{
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+        }
+        .bg_image_itself{
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (max-width: 640px) {
+            ul{
+                flex-direction: column;
+                gap: 20px;
+            }
+            li{
+                display: flex;
+                justify-content: center;
+            }
+            nav{
+                height: 100px;
+            }
+            .page_header{
+                font-size: 24px;
+            }
+            footer{
+                font-size: 14px;
+            }
+        }
+
+        /* Main */
+        .main-section{
+            padding-bottom: 40px;
+            padding-top: 30px;
+            gap: 30px;
+            width: 80%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .description
+        {
+            width: 80%;
+            font-size: 18px;
+        }
+        .main-h1
+        {
+            margin-bottom: 0px;
+            width: 80%;
+            text-align: center;
+        }
+        .main-link
+        {
+            border: 2px solid darkblue;
+            width: 80%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            color: darkblue;
+            transition: all 0.2s ease-in;
+        }
+        .main-link:hover{
+            background-color: darkblue;
+            color: white;
+            font-weight: 700;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 class="page_header">
+            <a href="./" style="color: white;">Driving Experience Assistant</a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav_link" href="./table.html">See List</a>
+                </li>
+                <li>
+                    <a class="nav_link" href="./form.html">Add Experience</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg_image">
+            <img src="https://cdn.bookingtimes.com/Common/LoadImage?Id=198903&v=1" class="bg_image_itself" alt="background image">
+        </div>
+
+        <section class="main-section">
+            <h1 class="main-h1">
+                Driving Experience Assistant
+            </h1>
+            <p class="description">
+                The "Driving Experience Assistant" is a meticulously crafted web application designed to assist young drivers in recording their accompanied driving experiences. This project aims to provide a user-friendly platform for individuals undergoing accompanied driving to document and validate their driving milestones, ensuring they have accumulated a minimum of 3,000 km over a period of 2 years or more, with diverse driving conditions.
+            </p>
+            
+            <a href="./form.html" class="main-link">Let's start</a>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2023 Driving Experience Assistant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
